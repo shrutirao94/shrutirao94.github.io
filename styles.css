@@ -1,0 +1,47 @@
+html {
+    display: block;
+}
+body {
+    font-family: sans-serif;
+    font-family: 'Space Mono', sans-serif;
+    line-height:1.45;
+    max-width:650px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin:0;
+    font-weight:300;
+}
+
+.header h2 {
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.header {
+/*div:first-of-type{*/
+    border-bottom: 2px solid;
+    margin: 1em 0;
+}
+
+div:nth-of-type(2){
+    max-width:550px;
+    margin:auto;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+    list-style: inside none none;
+}
+
+li {
+    flex-grow: 1;
+    padding: 0.5em 0.5em}
+    @media (min-width:550px) {body{margin:auto; text-align:justify}}
+}
