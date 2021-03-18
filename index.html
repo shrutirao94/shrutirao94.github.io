@@ -11,16 +11,16 @@
     </head>
     <body>
         <div class="header">
-            <h1>Shruti Rao</h1>
+            <h1>shruti rao</h1>
             <h2>computer scientist</h2>
         </div>
         <div class="aboutme">
-            <p> Recent graduate in Big Data Engineering from the UVA and VU,
+            <p> Recent Masters graduate in Big Data Engineering from the UVA and VU,
             Amsterdam </p>
             <p> Previously worked on 3D deep learning for neutrino detection
             from data collected by the underwater KM3NeT telescope</p>
             <p> Interested in applying deep learning as an independent
-            researcher to interdisciplinary fields, with emphasis on trustworhy
+            researcher to interdisciplinary fields, with emphasis on trustworthy
             AI </p>
         </div>
         <ul>
@@ -34,8 +34,22 @@
                 <a href="https://github.com/shrutirao94">github</a>
             </li>
         </ul>
-        <!--<script>-->
-            <!--window.addEventListener-->
+        <script>
+            window.addEventListener("DOMContentLoaded", function(){
+                            var subtitle = document.querySelector("h2");
+                            var pseudonyms = ["prog-head", "researcher", "vim martian","audiophile"];
+                            setInterval(function() {
+                                            var i =
+                                                pseudonyms.indexOf(subtitle.innerText)
+                                            + 1;
+                                            subtitle.innerText = pseudonyms[i
+                                                        % pseudonyms.length];
+                                        }, 5000);
+                            try {
+                                console.log("just some lighthearted stuff");
+                                        } catch(e) {}
+                        })
+        </script>
 
     </body>
 </html>
