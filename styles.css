@@ -6,6 +6,7 @@ body {
     font-family: 'Space Mono', sans-serif;
     line-height:1.45;
     max-width:650px;
+    background-color: #F0EAD6;
 }
 
 .header h1 {
@@ -22,7 +23,6 @@ body {
 }
 
 .header {
-/*div:first-of-type{*/
     border-bottom: 2px solid;
     margin: 1em 0;
 }
