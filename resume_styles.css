@@ -3,41 +3,24 @@ html {
 }
 
 body {
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'Roboto', monospace;
     line-height:1.45;
     max-width:650px;
     background-color: #F0EAD6;
 }
 
-.header h1 {
-    font-size: 3em;
-    margin:0;
-    font-weight:300;
+header, footer {
+    display: block;
+    font-family: 'Source Code Pro';
 }
 
-.header h2 {
-    font-size: 2em;
-    font-family: monospace;
-    font-weight: 300;
-    margin: 0.5em 0;
+section {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-.header {
-    border-bottom: 2px solid;
-    margin: 1em 0;
-}
-
-div:nth-of-type(2){
-    max-width:550px;
-    margin:auto;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 0;
-    list-style: inside none none;
+section>p {
+    margin: 0.2em 0 0.5em;
 }
 
 li {
