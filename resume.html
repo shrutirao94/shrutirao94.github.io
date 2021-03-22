@@ -1,54 +1,111 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>Shruti Rao Resume</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanilla CSS |  A minimal baseline stylesheet for any web project</title>
-    <link rel="stylesheet" href="vanilla.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resume_styles.css">
     <style>
-        body{margin:0 auto;max-width:50rem;}
-        @media(max-width:50rem) {
-            body {
-                padding: 10px;
-            }
-        }
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+        <!--body{margin:0 auto;max-width:50rem;}-->
+        <!--@media(max-width:50rem) {-->
+            <!--body {-->
+                <!--padding: 10px;-->
+            <!--}-->
+        <!--}-->
     </style>
   </head>
-  <body>
 
-    <p><strong></strong></p>
-    <hr />
-    <h1 id="summary">Summary</h1>
-    <ul>
-    <li><p>Researcher with skills in application of deep learning to interdisciplinary problems.</p></li>
-    <li><p>Independently conducted novel research with 3D deep learning for neutrino detection and demonstrated highly promising results.</p></li>
-    <li><p>Keen on developing tools to make accountable AI a norm by merging knowledge from background in social science.</p></li>
-    </ul>
-    <h1 id="education">Education</h1>
-    <p>[MSc Computer Science: Big Data Engineering][Sept 2018 - December 2020]</p>
-    <p>The joint degree by the University of Amsterdam and Vrije Universiteit allows for study of technology from which data infrastructures are built, allowing for design and operation solutions for processing, analyzing and managing large quantities of data.</p>
-    <p>[BA Arts: Honours in Mathematical Economics with Co-op][Sept 2012 - Apr 2018]</p>
-    <p>The joint programme offered by the Faculty of Mathematics and the Department of Economics includes the use of differential calculus, differential equations, and mathematical optimization to understand and predict economic behaviour. Studies complement advances in mathematics using problems that come up in economics.</p>
-    <h1 id="publications">Publications</h1>
-    <p>[ACM Multimedia Conference, Nice][16 October 2019] <a href="https://www.youtube.com/watch?v=B1ZM6EQgEvU">ACE</a> is a data driven, web-based platform for exploring visual sentiment and emotion in artistic paintings over time. A visual artistic sentiment extraction model was trained using artworks from the OmniArt dataset to estimate overall sentiments dominating specific time periods. An intuitive interface and extensive control on resource utilisation is in line with principles of Human-Computer Interaction to parse and display individual colour pixels and provide the smoothest possible user experience.</p>
-    <h1 id="relevant-projects">Relevant Projects</h1>
-    <ul>
-    <li><p>Managed an interdisciplinary team towards the development of a <a href="https://www.youtube.com/watch?v=8tB0jlxmyZQ">voice-based weather service</a> with automated geo-location for farmers in remote West Africa.</p></li>
-    <li><p>Modelled the prototype around <strong>Human Computer Interaction
-            (HCI)</strong> ideals for improved user functionality by using GPS
-        based auto detection of the users location to provide rainfall and storm information with minimal interactions.</p></li>
-    <li><p>Development was done using <strong>Django-Heroku</strong> and <strong>KasaDaka</strong> Voice Service Development Kit (VSDK) within the context of limited technology and diverse cultural and socio-economic aspect in West Africa.</p></li>
-    <li><p>The service is due to be tested in Ghana for further feedback and development as part of the ICT4D research programme at the Vrije Universiteit.</p></li>
-    </ul>
-    <ul>
-    <li><p>As part of a 3 person team, developed a 3D model of all the buildings in The Netherlands using 2TB point-cloud data and 18GB 2D building polygons.</p></li>
-    <li><p>SurfSara's <strong>Hadoop Cluster</strong> and <strong>LasPy</strong> were used for data pre-processing. Pre-processing techniques achieved significant data reduction, from 2TB to 3MB and 18GB data to 1.5GB respectively.</p></li>
-    <li><p>The 3D point cloud data was represented as octrees and masked and intersected with 2D building layouts.</p></li>
-    <li><p><strong>three.js</strong> was used to generate meshes and render the <span><a href="https://event.cwi.nl/lsde/2018/results/group13/">buildings</a></span>.</p></li>
-    <li><p>Project received recognition in the <a href="https://event.cwi.nl/lsde/2018/showcase_c1.shtml">Large Scale Data Engineering</a> Hall of Fame.</p></li>
-    </ul>
-    <ul>
+  <body>
+    <h1>Summary</h1>
+
+    <section class="summary">
+    <p> I am a computer science researcher with skills in application of deep
+    learning to inter-disciplinary problems. I especially work within the realm
+    of designing tools and workflows around big data to ensure software best
+    practices while highlighting domain problems in a new light.</p>
+
+    <p>I recently conducted novel research with 3D deep learning for neutrino
+    detection by representing data as point clouds. My methodology combined
+    with my novel noise detection solutions demonstrated highly promising
+    results and have set the path for 3D deep learning within particle
+    physics. </p>
+
+    <p> I am keen on working at the intersection of big data, 3D deep learning
+    and ethical, accountable AI that considers HCI. </p>
+    </section>
+
+    <h1>Education</h1>
+
+    <section class="education">
+    <p><b> MSc Computer Science: Big Data Engineering </b>
+    <small>[Sept 2018 - December 2020]</small></p>
+    <p>Joint degree by the University of Amsterdam and Vrije Universiteit
+    allows for study of technology from which data infrastructures are built,
+    allowing for design and operation solutions for processing, analyzing and
+    managing large quantities of data.</p>
+    <p><b>BA Arts: Honours in Mathematical Economics with Co-op</b>
+    <small>[Sept 2012 - Apr 2018]</small></p>
+    <p>Joint programme offered by the Faculty of Mathematics and the Department
+    of Economics includes the use of differential calculus, differential
+    equations, and mathematical optimization to understand and predict economic
+    behaviour. Studies complement advances in mathematics using problems that
+    come up in economics.</p>
+    </section>
+
+    <h1>Publications</h1>
+
+    <section class="publications">
+        <p><b>ACM Multimedia Conference, Nice</b> <small>[16 October
+            2019]</small></p> 
+        <p><a href="https://www.youtube.com/watch?v=B1ZM6EQgEvU">ACE</a> is a
+        data driven, web-based platform for exploring visual sentiment and
+        emotion in artistic paintings over time. A visual artistic sentiment
+        extraction model was trained using artworks from the OmniArt dataset to
+        estimate overall sentiments dominating specific time periods. An
+        intuitive interface and extensive control on resource utilisation is in
+        line with principles of Human-Computer Interaction to parse and display
+        individual colour pixels and provide the smoothest possible user
+        experience.</p>
+    </section>
+
+    <h1>Relevant Projects</h1>
+    
+    <section class="projects">
+        <p><b>ICT4D KasaDaka Weather Prediction for Sub-Saharan Africa</b></p>
+
+        <p>Managed an interdisciplinary team towards the development of a <a
+        href="https://www.youtube.com/watch?v=8tB0jlxmyZQ">voice-based weather
+        service</a> with automated geo-location for farmers in remote West
+    Africa.</p>
+        <p>Modelled the prototype around <i>Human Computer Interaction
+            (HCI)</i> ideals for improved user functionality by using GPS
+        based auto detection of the users location to provide rainfall and
+        storm information with minimal user interactions.</p>
+        <p>Development was done using <i>Django-Heroku</i> and <i>KasaDaka</i>
+        Voice Service Development Kit (VSDK) within the context of limited
+        technology and diverse cultural and socio-economic aspect in West
+        Africa.</p>
+        <p>The service is due to be tested in Ghana for further feedback and
+        development as part of the ICT4D research programme at the Vrije
+        Universiteit.</p>
+
+        <p><b>3D Kadaster Urban Landscape of The Netherlands</b></p>
+
+        <p>As part of a 3 person team, developed a 3D model of all the buildings in
+        The Netherlands using 2TB point-cloud data and 18GB 2D building
+        polygons.</p>
+        <p>SurfSara's <i>Hadoop Cluster</i> and <i>LasPy</i> were used for data
+        pre-processing. Pre-processing techniques achieved significant data
+        reduction, from 2TB to 3MB and 18GB data to 1.5GB respectively.</p>
+        <p>The 3D point cloud data was represented as octrees and masked and
+        intersected with 2D building layouts.</p>
+        <p><i>three.js</i> was used to generate meshes and render the <a
+            href="https://event.cwi.nl/lsde/2018/results/group13/">buildings</a>.</p>
+        <p>Project received recognition in the <a
+            href="https://event.cwi.nl/lsde/2018/showcase_c1.shtml">Large Scale
+            Data Engineering</a> Hall of Fame.</p>
+
     <li><p>Conducted sentiment analysis using <strong>SentiStrength</strong> and <strong>Python</strong> on the OmniArt dataset - a detailed collection of 1 million artworks and their metadata.</p></li>
     <li><p>Remarks made on various artworks gathered from 17BCE until 2012 were represented as human sentiment values. The goal was to observe the relationship between human sentiments and art across different cultural time periods.</p></li>
     <li><p>Key findings noted association of the Pop Art era that displayed vivid colours with positive emotions while both the Renaissance and Baroque era were associated with neutral to negative emotions.</p></li>
