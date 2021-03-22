@@ -5,18 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="resume_styles.css">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
-        <!--body{margin:0 auto;max-width:50rem;}-->
-        <!--@media(max-width:50rem) {-->
-            <!--body {-->
-                <!--padding: 10px;-->
-            <!--}-->
-        <!--}-->
+    <base href="/">
+    <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap');
     </style>
   </head>
 
   <body>
+      <header>
+          [shrutirao94] $
+               &nbsp;cat 
+          <a href="http://shrutirao94.github.io">about me</a>
+          <a href="mailto:shrutirao94@gmail.com"> email </a>
+      </header>
     <h1>Summary</h1>
 
     <section class="summary">
@@ -38,13 +40,13 @@
     <h1>Education</h1>
 
     <section class="education">
-    <p><b> MSc Computer Science: Big Data Engineering </b>
+    <p><b class="bold"> MSc Computer Science: Big Data Engineering </b>
     <small>[Sept 2018 - December 2020]</small></p>
     <p>Joint degree by the University of Amsterdam and Vrije Universiteit
     allows for study of technology from which data infrastructures are built,
     allowing for design and operation solutions for processing, analyzing and
     managing large quantities of data.</p>
-    <p><b>BA Arts: Honours in Mathematical Economics with Co-op</b>
+    <p><b class="bold">BA Arts: Honours in Mathematical Economics with Co-op</b>
     <small>[Sept 2012 - Apr 2018]</small></p>
     <p>Joint programme offered by the Faculty of Mathematics and the Department
     of Economics includes the use of differential calculus, differential
@@ -128,8 +130,8 @@
         <p>WARC files were streamed with <i>warcio</i> and pre-processing and
         text mining were performed on the <i>DAS4</i> cluster with
         <i>PySpark</i>.</p>
-        <p>Additionally, a novel method for extracting relations between two entities
-        was proposed for the <i>NLTK Python library</i>. PATTY was used to
+        <p>Additionally, a novel method for extracting relations between two
+        entities was proposed for the <i>NLTK Python library</i>. PATTY was used to
         train a model that predicted the relation between two entities given some
         filler text with 42.5% accuracy.</p>
 
@@ -141,39 +143,80 @@
         <i>Python</i>.</p>
     </section>
 
-    <h1 id="work-experience">Work Experience</h1>
-    <p>[Research Intern][June 2020 - October 2020]</p>
-    <ul>
-    <li><p>Investigated application of point-based deep learning for neutrino particle research as part of ongoing Masters thesis in collaboration with the <a href="https://www.esciencecenter.nl/"><strong>Netherlands e-Science Centre</strong></a> and <a href="https://www.nikhef.nl/"><strong>Nikhef</strong></a>, the Dutch institute for sub-atomic particle physics.</p></li>
-    <li><p>Implemented novel representation of data as <strong>3D meshes</strong> for identifying neutrino particles amidst large background noise.</p></li>
-    <li><p>Developed a data processing pipeline and extended the <a href="https://arxiv.org/abs/1612.00593">PointNet neural network</a> using the <strong>PyTorch</strong> framework to classify data containing neutrinos.</p></li>
-    <li><p>Trained with 3 <strong>AMD MI50 GPUs</strong> on the Nikhef cluster demonstrated network’s ability to identify 95% of the neutrinos. These metrics set the research baseline as the project is the first of its kind.</p></li>
-    <li><p>Demonstrated successful application of non-linear regression techniques to infer <strong>energy properties</strong> from identified neutrino events with 80% accuracy.</p></li>
-    </ul>
-    <p>[Revenue Analyst][Apr 2015 - Jan 2016]</p>
-    <ul>
-    <li><p>Developed 13 monthly dynamic business summaries using VBA, PowerPivots and PowerBI tools in Excel for all Microsoft divisions.</p></li>
-    <li><p>Created a 12 month revenue forecast report for Microsoft Office by analyzing 2 GB of data from the Revenue Database using MySQL.</p></li>
-    <li><p>Developed and presented a detailed analysis of inconsistencies in the Azure Cloud billing system to the President of Finance, Canada that was implemented.</p></li>
-    </ul>
-    <p>[Business Analyst][Jan 2014 – Apr 2014, Aug 2014 - Dec 2014 ]</p>
-    <ul>
-    <li><p>Created 3 bi-weekly reports using Excel and Salesforce to observe performance of Business Development team members.</p></li>
-    <li><p>Measured and presented bi-weekly metrics to measure student employment over the term at the University.</p></li>
-    <li><p>Designed report using Excel to track conversions from job posting to hiring for all University Students.</p></li>
-    <li><p>Created metrics to track and analyse job posting trends across all University Programs. This report was used by the Business Development team to attract employers to hire from programs with lower job postings.</p></li>
-    </ul>
-    <h1 id="teaching-experience">Teaching Experience</h1>
-    <p>[April 2020 - May 2020]</p>
-    <ul>
-    <li><p>Supervised the computer lab group of 54 Masters students through completion of a Data Mining project and various assignments.</p></li>
-    <li><p>Conducted weekly meetings to instruct and assist students in their progress through the assignments and addressed machine learning concepts as required.</p></li>
-    </ul>
-    <h1 id="technical-skills">Technical Skills</h1>
-    <ul>
-    <li><p><strong>Languages</strong> Python, JavaScript, R, Scheme, SQL, Shell, LaTeX</p></li>
-    <li><p><strong>Statistics</strong> Linear Models for Regression, Linear Classification, Perceptron, Linear Discriminant Analysis, Logistic Regression, Neural Networks,Principal Component Analysis, k-Means, Mixtures of Gaussians, Kernel methods, Support Vector Machines, Gaussian Processes</p></li>
-    <li><p><strong>Mathematics</strong> Multivariate Calculus, Orthogonal projections, Least-squares, Determinants, Singular-Value Decomposition, Higher Order Linear Ordinary Differential Equations, Black-Scholes Partial Differential Equations, Stochastic Differential Equations, Combinatorics &amp; Optimisation (Solving linear problems, computational complexity, Geometry, Linear programming duality, cutting planes, branch &amp; bound, Non-linear convex optimization)</p></li>
-    </ul>
+    <h1>Work Experience</h1>
+    <section class="work">
+
+    <p><b>Research Intern</b> <small>[June 2020 - October 2020]</small></p>
+    <p>Investigated application of point-based deep learning for neutrino
+    particle research as part of ongoing Masters thesis in collaboration with
+    the <a href="https://www.esciencecenter.nl/"><i>Netherlands e-Science
+    Centre</i></a> and <a
+    href="https://www.nikhef.nl/"><i>Nikhef</i></a>, the Dutch
+    institute for sub-atomic particle physics.</p>
+    <p>Implemented novel representation of data as <i>3D meshes</i> for
+    identifying neutrino particles amidst large background noise.</p>
+    <p>Developed a data processing pipeline and extended the <a
+    href="https://arxiv.org/abs/1612.00593">PointNet neural network</a> using
+    the <i>PyTorch</i> framework to classify data containing neutrinos.</p>
+    <p>Trained with 3 <i>AMD MI50 GPUs</i> on the Nikhef cluster demonstrated
+    network’s ability to identify 95% of the neutrinos. These metrics set the
+    research baseline as the project is the first of its kind.</p>
+    <p>Demonstrated successful application of non-linear regression techniques
+    to infer <i>energy properties</i> from identified neutrino events with 80%
+    accuracy.</p>
+
+    <p><b>Revenue Analyst</b> <small>[Apr 2015 - Jan 2016]</small></p>
+     <p>Developed 13 monthly dynamic business summaries using VBA, PowerPivots
+     and PowerBI tools in Excel for all Microsoft divisions.</p> 
+     <p>Created a 12 month revenue forecast report for Microsoft Office by
+     analyzing 2 GB of data from the Revenue Database using MySQL.</p> 
+     <p>Developed and presented a detailed analysis of inconsistencies in the
+     Azure Cloud billing system to the President of Finance, Canada that was
+     implemented.</p> 
+
+    <p><b>Business Analyst</b> <small>[Jan 2014 – Apr 2014, Aug 2014 - Dec 2014
+        ]</small></p>
+     <p>Created 3 bi-weekly reports using Excel and Salesforce to observe
+     performance of Business Development team members.</p>
+     <p>Measured and presented bi-weekly metrics to measure student employment
+     over the term at the University.</p> 
+     <p>Designed report using Excel to track conversions from job posting to
+     hiring for all University Students.</p> 
+     <p>Created metrics to track and analyse job posting trends across all
+     University Programs. This report was used by the Business Development team
+     to attract employers to hire from programs with lower job postings.</p> 
+    </section>
+
+    <h1>Teaching Experience</h1>
+    <section class="teaching">
+        <p><b>Data Mining Techniques</b> <small>[April 2020 - May 2020]</small></p>
+     <p>Supervised the computer lab group of 54 Masters students through
+     completion of a Data Mining project and various assignments.</p> 
+     <p>Conducted weekly meetings to instruct and assist students in their
+     progress through the assignments and addressed machine learning concepts
+     as required.</p> 
+    </section>
+
+    <h1>Technical Skills</h1>
+    <section class="skills">
+        <p><strong>Languages</strong> Python, JavaScript, R, Scheme, SQL,
+        Shell, LaTeX</p> 
+     <p><strong>Statistics</strong> Linear Models for Regression, Linear
+     Classification, Perceptron, Linear Discriminant Analysis, Logistic
+     Regression, Neural Networks,Principal Component Analysis, k-Means,
+     Mixtures of Gaussians, Kernel methods, Support Vector Machines, Gaussian
+     Processes</p> 
+     <p><strong>Mathematics</strong> Multivariate Calculus, Orthogonal
+     projections, Least-squares, Determinants, Singular-Value Decomposition,
+     Higher Order Linear Ordinary Differential Equations, Black-Scholes Partial
+     Differential Equations, Stochastic Differential Equations, Combinatorics
+     &amp; Optimisation (Solving linear problems, computational complexity,
+     Geometry, Linear programming duality, cutting planes, branch &amp; bound,
+     Non-linear convex optimization)</p> 
+    </section>
+
+    <footer>
+        [shrutirao94] $  █
+    </footer>
 </body>
 </html>
