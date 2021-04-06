@@ -242,28 +242,64 @@ point even though it may seem scary.</p>
 
 <h3 id="questions-for-interviewee">Questions for Interviewee</h3>
 <ol type="1">
-<li>Can you tell me a bit more on what the role will involve?</li>
-<li>What is the nature of the data we wold work with? Is it simulated or real
+<li> [DONE] Can you tell me a bit more on what the role will involve?</li>
+<li> [DONE] What is the nature of the data we wold work with? Is it simulated or real
     client data? If real client data, how are we proposing to work with
     this?</li>
-<li>What is the state of research in terms of the EU guidelines? For example,
+<li> What is the state of research in terms of the EU guidelines? For example,
     transparency eg explanability is one of the guidelines. Do we know to what
     extent we need to enure this? Maybe more risk averse in terms of
     explability as it may impact consumers</li>
-<li>What does the group aim to achieve in the short term?</li>
-<li>Will there be opportunities to collaborate outside the group?</li>
-<li>Is it encouraged to obtain conference funding, fellowship, awards etc for
+<li> What does the group aim to achieve in the short term?</li>
+<li> Will there be opportunities to collaborate outside the group?</li>
+<li> [DONE] Is it encouraged to obtain conference funding, fellowship, awards etc for
     research?Can I get help with such matters?</li>
-<li>WHat are the requirements to obtain a PhD? How many papers etc?</li>
-<li>What is the workflow within the group? Weekly meetings etc?</li>
+<li> [DONE] What are the requirements to obtain a PhD? How many papers etc?</li>
+<li> What is the workflow within the group? Weekly meetings etc?</li>
+<li> Is there a possibility that the position may be cancelled? If we cannot
+    come to an agreement with ING? </li>
+<li> What would you consider to be asuccessful outcome from this PhD? </li>
 </ol>
 
+<h1 id="technical-questions">Technical Questions </h1>
+
+<h2>Can You Suggest Some Ideas for Implementing the EU Guidelines</h2>
+
+<h3>Human Oversight & Agency</h3>
+<p>Make use of visual interfaces to allow humans to interact with system, at each
+stage of the ML workflow.</p>
+
+<h3>Technical Robustness & Safety </h3>
+<p> Ensure no data leakage, data poisioning etc. Fallback to rule-based
+approach in case of problems. </p>
+
+<h3>Privacy & Governance</h3>
+
+<p>GAN - use less data </p>
+<p>Federated Learning - data never leaves the user </p>
+
+<h3> Transparency </h3>
+<p>
+Documentation of decisions made, ensure explanability by ensuring that the
+features it uses are explanable. 
+</p>
+
+<h3> Diversity, non-discrimination, fairness </h3>
+<p>
+This is the hardest to ensure, but should be in the data collection and
+processing stage. For example, if a model has to predict how much loan a person
+should get, should they be given personal details such as age, gender, race
+etc? Should they be given address? Because the model can identify (potentially)
+the race based on postcode.
+</p>
 <h1 id="randoms">Randoms</h1>
 <p>[SUGGESTION] In the OmniART project, we used a two pronged approach - first,
 I improved the algorithm itself by using field-specific and context specific
 data. Second, we used an interactive UI to obtain additional information from
 mreal-world users. We could have additionally improved our model by
 incorporating these feedback into the system.</p>
-
+<p> [TO PREP] Data Engineering Challenge </p>
+<p> [TO THINK] Data availability when there is none. In this case, ING is
+hesitant to share the data. So how can we research nevertheless? </p>
     </body>
 </html>
